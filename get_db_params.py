@@ -11,25 +11,25 @@ def get_db_user():
     ret = os.environ.get('POSTGRES_USER')
     if ret == None:
         ret = os.environ.get('POSTGRESQL_USER')
-    return ret 
+    return ret
 
 def get_db_password():
     ret = os.environ.get('POSTGRES_PASSWORD')
     if ret == None:
         ret = os.environ.get('POSTGRESQL_PASSWORD')
-    return ret 
+    return ret
 
 def get_db_host():
     ret = os.environ.get('POSTGRES_HOST')
     if ret == None:
         ret = os.environ.get('POSTGRESQL_HOST')
-    return ret 
+    return ret
 
 def get_db_name():
     ret = os.environ.get('POSTGRES_DB')
     if ret == None:
         ret = os.environ.get('POSTGRESQL_DATABASE')
-    return ret 
+    return ret
 
 get_db_param = {
     'user' : get_db_user,
